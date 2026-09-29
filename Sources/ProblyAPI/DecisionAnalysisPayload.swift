@@ -16,7 +16,7 @@ struct QuestionPayload: Decodable {
     let id: UUID
     let instructions: String
     let criteria: QuestionCriteria
-    
+        
     enum CodingKeys: String, CodingKey {
         case id
         case instructions
@@ -51,7 +51,7 @@ struct ChoiceOption: Decodable {
     let explanation: String?
 }
 
-struct NoulCriteria: Decodable {
+struct NoulCriteria: Codable {
     let trueExplanation: String?
     let falseExplanation: String?
     
