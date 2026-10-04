@@ -21,6 +21,7 @@ services:
     image: problyapi:latest
     build:
       context: .
+      dockerfile: Dockerfile.vercel
     environment:
       <<: *shared_environment
     ports:
